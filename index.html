@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Нейронка - Бесплатный ChatGPT в России</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript">
+    function loadPage() {
+      var select = document.getElementById("modelSelect");
+      var iframe = document.getElementById("modelFrame");
+
+      var url = select.value === "GPT-4" ? 
+          "http://cclx.win/O2mg0" : "http://cclx.win/P2mg0";
+
+      iframe.src = url;
+    }
+  </script>
+</head>
+<body onload="loadPage()">
+  <main>
+    <h1>Нейронка - Бесплатный ChatGPT в России</h1>
+    <p>Мы даем доступ к GPT 3.5-turbo и GPT 4 - передовым языковым моделям от компании OpenAI.<br>Вы можете использовать их для написания сочинений, ответа на интересующие вас вопросы, разговоров по душам или для любых других своих нужд.</p>
+    <p>Перед использованием любой из моделей мы покажем вам одну рекламу длиной в 15 секунд.<br>Для использования GPT-4 необходимо авторизоваться через аккаунт Google.</p>
+    <select id="modelSelect" onchange="loadPage()">
+        <option value="GPT-3.5 Turbo" selected>GPT-3.5 Turbo</option>
+        <option value="GPT-4">GPT-4</option>
+    </select>
+
+    <iframe id="modelFrame" width="100%" height="600px"></iframe>
+  </main>
+</body>
+</html>
